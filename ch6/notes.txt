@@ -1,0 +1,18 @@
+kill -l // show all the signals in the system
+
+trap 'echo Hey you trying to kill me' SIGINT // trap is a hook in this case it is caches ctrl + C
+SIGINT // ctrl + C
+kill %1 // terminate job 1 in current terminal
+SIGHUP // hooks kill -1 processID //termination
+ps -ef | grep process_name // shows process id
+kill -1 processID // kill the process
+kill -4 processID // also kill the process but it is using diffrent signal
+SIGKILL or kill -9 // this signal cannot be trapped
+du -h /  // list all paths 
+lsof // list of all open files
+netstat -nap // not working on Debian buster // but it shows network conections
+lscpu // list of all CPU info
+lsusb //list if usb devices
+lspci // list of all PCI devices like video controller
+sudo dmidecode // shows bios info
+tcpdump -i wlan0 // show sended data

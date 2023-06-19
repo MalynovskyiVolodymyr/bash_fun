@@ -1,0 +1,18 @@
+
+-gt // greter then
+-e // file exists
+-f // it is a regular file
+-b // it is a block device file
+-c // it is character device file
+-d // is is a directory
+-n // if string is not zero
+-z // if string is zero
+
+sudo mknod mynode_bloc b 5 6  // create block device
+sudo mknod mynode_char c 7 8 // create characted device
+id // shows information about current user
+id -u // shows user ID
+read // read input
+read -n2 NUM // read only 2 characters
+read -a my_array //read and array
+$? // exit status of the previouse command execution

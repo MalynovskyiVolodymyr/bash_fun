@@ -1,0 +1,95 @@
+echo * // the same as ls
+echo $SHELL // path to shell
+
+uname -a // show machine name
+
+hostname -i // display ip address
+
+sudo parted // disc util block devices manager
+
+cat > abc.txt // allows to create a file and add some text to it
+ctrl + D // end of the input
+
+cat abc.txt abc1.txt > ab_all.txt // take content of 2-files and put int into one
+
+history //shows bash history
+!h     - // - // -
+
+ls -li file_name // shows address in memory of the file
+ls -li // shows all files addresses
+
+who // shows how many users are logged in to the system
+
+su - user_name // login as another user
+
+tty // shows my terminal
+
+which python // shows path to the application or command
+which bash // -- // -- //
+
+date +"%m%d%H%M%Y.%S" // show current date
+date 070711452021.35  // set current date
+
+ctrl + z // put current job to background and sleep
+jobs // list background jobs
+bg %1 // take background job 1 and continue
+
+./simple.sh & // run script in background
+
+sort fruits_list.txt // sorted output
+sort -u fruit_list.txt // sorted unique output
+sort -n file_number.txt // sort numbers
+sort fruit_list.txt | uniq // sort uniq values
+
+top -b -n 1 > top_out.txt // runs only 1-se, and saves top otuput
+
+ps // show terminal processes
+ps -ef // show all system processes
+ps auxwww // show all processes with details
+ps -ef |more // show in more than one pages
+
+exec 3<> mylog.txt //create descriptor 3 (0,1,2 reserved descriptors, 0 input, 1 output, 2 error)
+echo "hello World!" >&3 // ouput goes to new descriptor 
+exec 3>&- // cansel redirection
+	< input
+	> ouput
+
+u // undu changes
+dw // delete word
+3dw // delete 3 - words
+o // new line
+yy // copy
+p // paste
+x // delete one character at time
+5dd // delete 5 line
+set nu // show line numbers
+set nonu // hide line numbers
+shift + j // from bootom to top
+shift + r // replacing mode
+shift + g // go to the end of th file
+:1 // go to the line 1
+esc + 100 + dd //delete 100 lines
+yy + 100 // copy 100 lines
+p + 1000 //paste 1000 time
+:e // show the fike name
+:f // show the file name
+:e file_name // open another file
+:bn go to the next or previouse file
+:sp //split terminal horizonticaly
+:vsp // split terminal verticaly
+ctrl + ww //move between splited terminals
+
+chmod -R 700 test_dir_name // change permission recursivly in all files in the dir
+chmod -R 777 . // change permission to all files in current directory
+chmod g+rwx file_name // change gourp permissions
+chmod u-rwx file_name // change user premission
+chmod o-rwx file_name //change overs permission
+
+sudo chgrp group_name file_name //change group for file usage
+sudo chown user_name:group_name file_name //change ownership 
+sudo chown -R user_name:group_name dir_name//change ownership to files in the folder (.)
+
+getent passwd // list all users
+cat /etc/passwd -- // -- // --
+getent group // list all groups
+car /etc/group -- // -- // --

@@ -1,0 +1,10 @@
+$RANDOM // random number
+declare -a array //declare an array
+array[0]="Hello" // -- // -- //
+
+array_var=("The" "rate" "is" 45 "per KG") 
+echo ${array_var[0]}
+awk -F':' // split text on : //if leave empty means plit by ' '
+cat /etc/passwd | awk -F':' '{print $1}' // print $1 - print first column
+
+

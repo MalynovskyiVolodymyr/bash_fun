@@ -1,0 +1,52 @@
+
+ps auxwww //shows details of each process
+pf -eLf // shows all processes L means threads
+ls some_error > file_name 2>&1 // 2>&1 redirect error to ouput
+exec 3<> file_name // create descriptior 3 and redirect outpur to the file_name
+echo "some text" >&3 // redirect ouput to the file_name defined previously
+exec 3>&- // cansel redirection
+find file_name -type f //find file "d directory, f file"
+ls ????????? // find file 9-characters in the name
+ls * // list all
+ls *.txt // list all with the txt in the end
+ls f[a-z]uits.txt // [] means range
+ls {*.doc,*.pdf}
+find /home/volodymyr_malynovskyi/ -name notes.txt // find something in path 
+find /home/volodymyr_malynovskyi/ -iname notes.txt // -- // -iname case insansative
+find /home/volodymyr_malynovskyi/ -iname "*.txt" // -- // -- with regular expression
+find . -name "*.txt" // it look recursevly
+find . -maxdepth 2 -name "*.txt" // it look recursevly in two levels only
+find . -maxdepth 3 -not -name "*.txt" // -not -- // -- // -- // --
+find -iname "*.cpp" -o -iname "*.h" // -o means or -- // -- // --
+find /home/volodymyr_malynovskyi/ /usr/lib/ -type f -name "*abc" // search in two paths
+find /home/volodymyr_malynovskyi/ -type f ! -perm 0755 // find files with no permisionns 755
+find /bin/ -type f ! -perm 755 // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- //
+sudo find / -perm /u=s // find all files with sticky bit s /u means user
+sudo find /bin/ -perm /u=r //find all with read for user permission
+sudo find /bin/ -perm /a=x //find all (/a - all) files with execute permission in /bin/
+sudo find /home -user volodymyr_malynovskyi // find all my files
+find / -mtime 10 // find all files that was changed during last 10 days
+find / -atime 3
+sudo find /home/volodymyr_malynovskyi/ -mmin -20 // find files that was changed 20 min back
+							(a access, c status m modified )
+sudo find /home/ -size 50M // find all 50Mib files
+find /home/ -size -50M -size +100M // find all files from 50-100 Mbit 
+find /home/ -type f -empty // find empty files (empty files can slow down perfomens of the app)
+find /home/ -exec ls -ld {} \; // find and execute some command
+find /home/ | xargs ls -ld {} \;// -- // -- // -- // --
+
+grep "user" top.txt // find user in top.txt
+grep -i "user" top.txt // -i ignore case -- // -- // --
+grep -i "user" * // * means serch in all files in current directory
+grep -ir "user" * // -r means serch -- // -- and in subdirectories recursivly
+nm simple | grep -v "U" // nm(it works with c/c++ compiled files)
+		-v(means ignore "U"), "U" undefined lib
+nm simple | grep -v "U" | awk '{print $3}' // -- // awk means print 3-rd column
+grep -E 'user|else' * // serch for 2 words
+grep -E '(vmx|svm)' --color=always /proc/cpuinfo // -- // -- // -- //
+	-c flag means count matches
+	-n show line number
+	-l show only list of file names
+
+grep '[0-9][0-9][0-9]' // search for at least 3-digints in the row	
+ 

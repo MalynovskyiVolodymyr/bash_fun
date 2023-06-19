@@ -1,0 +1,13 @@
+ls -lR > ./ch11/dir-tree.list // -lR list directories trees all files to file
+: > temp // create temp file or if file exists truncat file size to zero
+alias lm='ls -l | more' // create alias(replace single quotes with double)
+unalias lm //remove alias
+tput bold // Bold print
+tput sqr0 // reset terminal
+
+cat /proc/devices // The files in /proc mirror currently running system and kernel processes and contain information and statistics about them.
+cat /proc/interrupts
+cat /proc/partitions
+
+netstat -s | grep "packets received" # Get some connect statistics.
+netstat -s | grep "packets delivered"

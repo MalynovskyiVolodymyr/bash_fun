@@ -1,0 +1,27 @@
+find ~/ -name '*.txt'// serch recusevly from user home directory
+find ~/ -name 'some_name*' -exec rm {}\; // find and remove 'some_name' 
+find ~/ -mtime -1 // list all files ~/ directory tree that were modified within last day
+find ~/ -mtime 1 // find all modified exacly one day ago
+find /etc -exec grep '[0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*[.][0-9][0-9]*' {} \; // Finds all IP address (xxx.xxx.xxx.xxx) in /etc 
+tar czvf archive_name.tar.gz * // archive all files in current directory exept '.'
+readlink /usr/bin/awk // read symbolik link file location
+host host_name // searches for information about an Internet host by name or IP address
+ipcalc // displays IP information for a host
+ipcalc -h 202.92.42.236 // examlpe
+nslookup -sil 66.97.104.180 // Do and Internet name server lookup
+traceroute // trace the route taken by packets sent to remote host
+finger // retrive information about users on network
+reset // reset terminal parameters and clear screen
+seq 80 // generetas 12..80
+/etc/rc0.d/K01networking // /etc/rc.d files are startup and shutdown scripts
+mesg [options] [y | n] // Control write access of other users to your terminal
+wall message // send message to users of current system
+lsof // list of all openned files
+lsof -i // list open network socket files
+lsof -an -i tcp // list open network socket tcp files
+sudo dmesg // show all bootup messages
+sudo dmesg | grep hda // messages
+pstree -p // show executing tree with the PID
+http://www.frozentux.net/iptables-tutorial/iptables-tutorial.html --- IPTABLES TUTORIAL LINK
+chkconfig --list // cheks network and system configuration
+ldd /bin/ls // shows shared libraries dependencies for an executable file

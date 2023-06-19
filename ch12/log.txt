@@ -1,0 +1,163 @@
+[?1h=[?25l[H[2J(B[mtop - 13:30:55 up  1:48,  1 user,  load average: 0.56, 0.46, 0.27(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 130 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 129 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m 11.9 (B[m[39;49mus,(B[m[39;49m[1m  4.5 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 83.6 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m  15462.1 (B[m[39;49mtotal,(B[m[39;49m[1m  14412.5 (B[m[39;49mfree,(B[m[39;49m[1m    493.1 (B[m[39;49mused,(B[m[39;49m[1m    556.4 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m    977.0 (B[m[39;49mtotal,(B[m[39;49m[1m    977.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m  14604.3 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                          (B[m[39;49m[K
+(B[m 1119 volodym+  20   0 1806840 224664  59040 S  37.5   1.4  12:24.87 parole                                           (B[m[39;49m[K
+(B[m  721 root      20   0  634288  85072  64744 S   6.2   0.5   2:39.83 Xorg                                             (B[m[39;49m[K
+(B[m[1m 6186 volodym+  20   0   11148   3532   3104 R   6.2   0.0   0:00.01 top                                              (B[m[39;49m[K
+(B[m    1 root      20   0  169520  10240   7864 S   0.0   0.1   0:02.37 systemd                                          (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd                                         (B[m[39;49m[K
+(B[m    3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                           (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                       (B[m[39;49m[K
+(B[m    6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd                             (B[m[39;49m[K
+(B[m    8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                     (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftirqd/0                                      (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 I   0.0   0.0   0:00.15 rcu_sched                                        (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_bh                                           (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0   0.0   0:00.02 migration/0                                      (B[m[39;49m[K
+(B[m   14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                          (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                          (B[m[39;49m[K
+(B[m   16 root      rt   0       0      0      0 S   0.0   0.0   0:00.33 migration/1                                      (B[m[39;49m[K
+(B[m   17 root      20   0       0      0      0 S   0.0   0.0   0:00.01 ksoftirqd/1                                      (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[KUSER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 169520 10240 ?        Ss   11:42   0:02 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    11:42   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   11:42   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   11:42   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/0:0H-kblockd]
+root         8  0.0  0.0      0     0 ?        I<   11:42   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    11:42   0:00 [ksoftirqd/0]
+root        10  0.0  0.0      0     0 ?        I    11:42   0:00 [rcu_sched]
+root        11  0.0  0.0      0     0 ?        I    11:42   0:00 [rcu_bh]
+root        12  0.0  0.0      0     0 ?        S    11:42   0:00 [migration/0]
+root        14  0.0  0.0      0     0 ?        S    11:42   0:00 [cpuhp/0]
+root        15  0.0  0.0      0     0 ?        S    11:42   0:00 [cpuhp/1]
+root        16  0.0  0.0      0     0 ?        S    11:42   0:00 [migration/1]
+root        17  0.0  0.0      0     0 ?        S    11:42   0:00 [ksoftirqd/1]
+root        19  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/1:0H-kblockd]
+root        20  0.0  0.0      0     0 ?        S    11:42   0:00 [cpuhp/2]
+root        21  0.0  0.0      0     0 ?        S    11:42   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    11:42   0:00 [ksoftirqd/2]
+root        24  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/2:0H-kblockd]
+root        25  0.0  0.0      0     0 ?        S    11:42   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    11:42   0:00 [migration/3]
+root        27  0.0  0.0      0     0 ?        S    11:42   0:00 [ksoftirqd/3]
+root        29  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/3:0H-kblockd]
+root        30  0.0  0.0      0     0 ?        S    11:42   0:00 [kdevtmpfs]
+root        31  0.0  0.0      0     0 ?        I<   11:42   0:00 [netns]
+root        32  0.0  0.0      0     0 ?        S    11:42   0:00 [kauditd]
+root        33  0.0  0.0      0     0 ?        S    11:42   0:00 [khungtaskd]
+root        34  0.0  0.0      0     0 ?        S    11:42   0:00 [oom_reaper]
+root        35  0.0  0.0      0     0 ?        I<   11:42   0:00 [writeback]
+root        36  0.0  0.0      0     0 ?        S    11:42   0:00 [kcompactd0]
+root        37  0.0  0.0      0     0 ?        SN   11:42   0:00 [ksmd]
+root        38  0.0  0.0      0     0 ?        SN   11:42   0:00 [khugepaged]
+root        39  0.0  0.0      0     0 ?        I<   11:42   0:00 [crypto]
+root        40  0.0  0.0      0     0 ?        I<   11:42   0:00 [kintegrityd]
+root        41  0.0  0.0      0     0 ?        I<   11:42   0:00 [kblockd]
+root        43  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/3:1-events]
+root        44  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/1:1-mm_percpu_wq]
+root        45  0.0  0.0      0     0 ?        I<   11:42   0:00 [edac-poller]
+root        46  0.0  0.0      0     0 ?        I<   11:42   0:00 [devfreq_wq]
+root        47  0.0  0.0      0     0 ?        S    11:42   0:00 [watchdogd]
+root        48  0.0  0.0      0     0 ?        S    11:42   0:00 [kswapd0]
+root        66  0.0  0.0      0     0 ?        I<   11:42   0:00 [kthrotld]
+root        67  0.0  0.0      0     0 ?        I<   11:42   0:00 [ipv6_addrconf]
+root        78  0.0  0.0      0     0 ?        I<   11:42   0:00 [kstrp]
+root       125  0.0  0.0      0     0 ?        I<   11:42   0:00 [acpi_thermal_pm]
+root       129  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/0:2-events]
+root       131  0.0  0.0      0     0 ?        I<   11:42   0:00 [ata_sff]
+root       175  0.0  0.0      0     0 ?        S    11:42   0:00 [scsi_eh_0]
+root       176  0.0  0.0      0     0 ?        I<   11:42   0:00 [scsi_tmf_0]
+root       177  0.0  0.0      0     0 ?        S    11:42   0:00 [scsi_eh_1]
+root       178  0.0  0.0      0     0 ?        I<   11:42   0:00 [scsi_tmf_1]
+root       179  0.0  0.0      0     0 ?        S    11:42   0:00 [scsi_eh_2]
+root       180  0.0  0.0      0     0 ?        I<   11:42   0:00 [scsi_tmf_2]
+root       182  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/u8:3-events_unbound]
+root       183  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/u9:0]
+root       184  0.0  0.0      0     0 ?        S    11:42   0:00 [i915/signal:0]
+root       185  0.0  0.0      0     0 ?        S    11:42   0:00 [i915/signal:1]
+root       186  0.0  0.0      0     0 ?        S    11:42   0:00 [i915/signal:2]
+root       187  0.0  0.0      0     0 ?        S    11:42   0:00 [i915/signal:6]
+root       189  0.0  0.0      0     0 ?        I<   11:42   0:00 [nvkm-disp]
+root       191  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/0:1H-kblockd]
+root       192  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/3:1H-kblockd]
+root       193  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/2:1H-kblockd]
+root       196  0.0  0.0      0     0 ?        I<   11:42   0:00 [ttm_swap]
+root       228  0.0  0.0      0     0 ?        I<   11:42   0:00 [kworker/1:1H-kblockd]
+root       232  0.0  0.0      0     0 ?        S    11:42   0:00 [jbd2/sdb2-8]
+root       233  0.0  0.0      0     0 ?        I<   11:42   0:00 [ext4-rsv-conver]
+root       264  0.0  0.0  29716  8744 ?        Ss   11:42   0:00 /lib/systemd/systemd-journald
+root       291  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/2:2-events_power_efficient]
+root       292  0.0  0.0  22700  5224 ?        Ss   11:42   0:00 /lib/systemd/systemd-udevd
+root       395  0.0  0.0      0     0 ?        S    11:42   0:00 [irq/125-mei_me]
+root       419  0.0  0.0      0     0 ?        I    11:42   0:00 [kworker/1:2-cgroup_destroy]
+systemd+   576  0.0  0.0  95148  6524 ?        Ssl  11:42   0:02 /lib/systemd/systemd-timesyncd
+root       610  0.0  0.0  31420  6092 ?        SNs  11:42   0:00 /usr/sbin/alsactl -E HOME=/run/alsa -s -n 19 -c rdaemon
+root       613  0.0  0.0 318244  9772 ?        Ssl  11:42   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root       614  0.0  0.0   8504  2732 ?        Ss   11:42   0:00 /usr/sbin/cron -f
+root       617  0.0  0.0 395540 11928 ?        Ssl  11:42   0:01 /usr/lib/udisks2/udisksd
+root       618  0.0  0.0  19584  7392 ?        Ss   11:42   0:00 /lib/systemd/systemd-logind
+message+   619  0.0  0.0   9680  4816 ?        Ss   11:42   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       620  0.0  0.0 256872 14244 ?        Ssl  11:42   0:00 /usr/sbin/NetworkManager --no-daemon
+root       621  0.0  0.0  19768  5256 ?        Ss   11:42   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       622  0.0  0.0 225824  4332 ?        Ssl  11:42   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi      624  0.0  0.0   8156  3392 ?        Ss   11:42   0:00 avahi-daemon: running [myHomePC123.local]
+avahi      639  0.0  0.0   8156   324 ?        S    11:42   0:00 avahi-daemon: chroot helper
+root       643  0.0  0.0 240300  8640 ?        Ssl  11:42   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       658  0.0  0.0 313400  7076 ?        SLsl 11:42   0:00 /usr/sbin/lightdm
+root       688  0.0  0.0      0     0 ?        I<   11:42   0:00 [iprt-VBoxWQueue]
+root       689  0.0  0.0      0     0 ?        S    11:42   0:00 [iprt-VBoxTscThr]
+root       721  2.4  0.5 634296 84784 tty7     Ssl+ 11:42   2:41 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root       722  0.0  0.0   5612  1684 tty1     Ss+  11:42   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       784  0.0  0.0 166824  7148 ?        Sl   11:43   0:00 lightdm --session-child 14 23
+volodym+   789  0.0  0.0  21360  9360 ?        Ss   11:43   0:00 /lib/systemd/systemd --user
+volodym+   790  0.0  0.0 170768  2456 ?        S    11:43   0:00 (sd-pam)
+volodym+   800  0.0  0.0   2388  1436 ?        Ss   11:43   0:00 /bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc
+volodym+   808  0.0  0.0   9356  4744 ?        Ss   11:43   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+volodym+   829  0.0  0.0   5852   472 ?        Ss   11:43   0:00 /usr/bin/ssh-agent x-session-manager
+volodym+   839  0.0  0.0 211812 15188 ?        Sl   11:43   0:00 xfce4-session
+volodym+   843  0.0  0.0  16728  5492 ?        S    11:43   0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+volodym+   847  0.0  0.0  80964  3332 ?        SLs  11:43   0:00 /usr/bin/gpg-agent --supervised
+volodym+   850  0.3  0.1  67520 22440 ?        S    11:43   0:21 xfwm4
+volodym+   854  0.0  0.2 249836 40292 ?        Sl   11:43   0:00 xfce4-panel
+volodym+   856  0.0  0.2 432440 44396 ?        Sl   11:43   0:01 Thunar --daemon
+volodym+   858  0.0  0.1 293532 27920 ?        Sl   11:43   0:00 xfdesktop
+volodym+   859  0.0  0.2 366712 33252 ?        Sl   11:43   0:00 nm-applet
+volodym+   860  0.0  0.0 245344 14404 ?        Ssl  11:43   0:00 xfsettingsd
+volodym+   861  0.0  0.0 201100 15596 ?        Sl   11:43   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+volodym+   869  0.0  0.1 278228 20552 ?        Sl   11:43   0:00 light-locker
+volodym+   871  0.0  0.0 240084  7252 ?        Ssl  11:43   0:00 /usr/lib/gvfs/gvfsd
+volodym+   876  1.0  0.1 646200 25848 ?        Ssl  11:43   1:09 /usr/bin/pulseaudio --daemonize=no
+volodym+   886  0.0  0.0 159344  5196 ?        Sl   11:43   0:00 /usr/lib/dconf/dconf-service
+volodym+   887  0.0  0.1 215664 19636 ?        Ssl  11:43   0:00 xfce4-power-manager
+volodym+   892  0.0  0.0 312432  8388 ?        Ssl  11:43   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+volodym+   897  0.0  0.0   8968  4228 ?        S    11:43   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+root       898  0.0  0.0 258812  9512 ?        Ssl  11:43   0:00 /usr/lib/upower/upowerd
+volodym+   906  0.0  0.0 174024  6856 ?        Sl   11:43   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+volodym+   909  0.0  0.1 290792 26264 ?        Ssl  11:43   0:00 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+volodym+   923  0.0  0.0  63900 14692 ?        S    11:43   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 6 14680103 systray Notification Area Area where notification icons appear
+volodym+   924  0.0  0.1  64716 16096 ?        S    11:43   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 2 14680104 actions Action Buttons Log out, lock or other system actions
+volodym+   939  0.0  0.3 389016 48472 ?        Sl   11:43   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libscreenshooterplugin.so 16 14680108 screenshooter Screenshot Take screenshots of the entire screen, of the active window or of a region
+volodym+   940  0.0  0.0 280360 11912 ?        Ssl  11:43   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+volodym+   953  0.0  0.0 314172  7668 ?        Sl   11:43   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.11 /org/gtk/gvfs/exec_spaw/0
+volodym+   966  0.0  0.0 164680  5760 ?        Ssl  11:43   0:00 /usr/lib/gvfs/gvfsd-metadata
+volodym+   973  0.0  0.2 394092 35800 ?        Sl   11:43   0:05 xfce4-terminal
+volodym+   977  0.0  0.0   8620  5340 pts/0    Ss   11:43   0:00 bash
+volodym+  1119 11.6  1.4 1806840 224664 ?      SLl  11:44  12:30 parole /home/volodymyr_malynovskyi/Documents/Linux/and3/Bash Shell scripting and automation.mp4
+root      5848  0.0  0.0      0     0 ?        I    12:35   0:00 [kworker/u8:1-events_unbound]
+root      5883  0.0  0.0      0     0 ?        I    12:40   0:00 [kworker/3:0]
+root      5884  0.0  0.0      0     0 ?        I    12:42   0:00 [kworker/0:1-events]
+root      5970  0.0  0.0      0     0 ?        I    13:18   0:00 [kworker/2:0]
+volodym+  6191  0.0  0.0  10632  3128 pts/0    R+   13:31   0:00 ps auxwww
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory
+ls: cannot access 'notexisting_file.bag': No such file or directory

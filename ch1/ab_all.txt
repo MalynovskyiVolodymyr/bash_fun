@@ -1,0 +1,12 @@
+cat > abc.txt // allows to cre
+[A[Bdsads
+
+sad
+as
+d
+asd
+as
+d
+some new text in [H---------------------------
+new file abc1 2
+cat > abc1.txt

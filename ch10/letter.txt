@@ -1,0 +1,155 @@
+Fellow Linux user, greetings! You are reading something which
+will bring you luck and good fortune. Just e-mail a copy of
+this document to 10 of your friends. Before making the copies,
+send a 100-line Bash script to the first person on the list
+at the bottom of this letter. Then delete their name and add
+yours to the bottom of the list.
+Don't break the chain! Make the copies within 48 hours.
+Wilfred P. of Brooklyn failed to send out his ten copies and
+woke the next morning to find his job description changed
+to "COBOL programmer." Howard L. of Newport News sent
+out his ten copies and within a month had enough hardware
+to build a 100-node Beowulf cluster dedicated to playing
+Tuxracer. Amelia V. of Chicago laughed at this letter
+and broke the chain. Shortly thereafter, a fire broke out
+in her terminal and she now spends her days writing
+documentation for MS Windows.
+Don't break the chain!
+Send out your ten copies today!
+
+#!/bin/bash
+
+trap 'echo "Hey you trying to kill me"' SIGINT
+
+while :
+do
+	echo "Hi there"
+	sleep 1
+done
+#!/bin/bash
+
+trap 'echo "Hey you are trying to kill me"' SIGHUP
+
+while : 
+do
+	echo "Hi there"
+	sleep 1
+done
+#!/bin/bash
+
+function cleanup(){
+	echo "you attemt to stop me was cached))!"
+	echo "Recived signal is $1"
+}
+
+trap 'cleanup SIGINT' SIGHUP SIGINT SIGTRAP SIGILL
+
+while :
+do
+	echo "Hi there!"
+	sleep 1
+done
+#!/bin/bash
+
+function reciver(){
+	echo " Hello from function"
+	echo " your signal is $1"
+}
+
+trap 'reciver SIGINT' SIGINT
+trap 'reciver SIGHUP' SIGHUP
+trap 'reciver SIGILL' SIGILL
+
+while :
+do
+	echo "Hi there!"
+	sleep 1
+done
+#!/bin/bash
+
+trap 'continue' SIGINT
+
+while :
+do
+	echo "Hi there"
+	sleep 1
+done
+#!/bin/bash
+
+function cleanup(){
+	echo "leanup called by $1"
+	rm -rf ./startup.log
+	rm -rf ./df.log
+	rm -rf ./hostname.log
+}
+
+trap 'cleanup EXIT; exit 1' EXIT
+trap 'cleanup SIGINT; exit 1' SIGINT
+trap 'cleanup SIGHUP; exit 1' SIGHUP
+
+MainLogFileName="./main_script.log"
+
+echo "Start of the script" > ./startup.log
+
+hostname -f > hostname.log
+
+tmpfs_size=`df | grep tmpfs | tail -1 | awk '{print $4}'`
+
+if [[ tmpfs_size -gt 20 ]]
+then
+	echo "Disk has sufficeint size" > ./df.log
+else
+	echo "Disk is full" > ./df.log
+fi
+
+cat ./df.log ./startup.log ./hostname.log > $MainLogFileName
+
+sleep 9999
+#!/bin/bash
+
+function next_signal(){
+	echo "next_signal was called"
+	trap - SIGINT
+}
+
+function first_signal(){
+	echo "first_fignale was called"
+	trap 'next_signal' SIGINT
+}
+
+trap 'first_signal' SIGINT
+
+while :
+do
+	echo "Hi there!"
+	sleep 1
+done
+#!/bin/bash
+
+old_time=
+new_time=
+
+cleanup(){
+	echo " Some cleanup permofmed "
+	new_time=`date +%s`
+	time_diff=$((new_time-old_time))
+	
+	if [ $time_diff -gt 0 ] && [ $time_diff -lt 3 ]
+	then
+		echo "Exiting program as key pressed within $time_diff"
+		exit 1
+	else
+		old_time=$new_time
+	fi
+}
+
+trap 'cleanup SIGINT' SIGINT
+
+while :
+do
+	echo "hello"
+	sleep 1
+done
+
+created by Volodymyr Malynovskyi
+https://supersalo.herokuapp.com

@@ -1,0 +1,29 @@
+date "+%m%d%H%M%Y.%S" // get date time
+sudo date 112513072021.21 // set date time
+
+df -kh | grep sdb2 | awk '{print $4}'
+
+
+
+
+
+ 
+ps auxwww // show all procesess with command to run them
+ls notexisting_file.bag >> log.txt 2>&1 
+exec 3<> mylog.txt // create new descriptor
+"echo "hello 2" >&3 // using new descriptor
+exec 3>&- // removing desriptor
+find ~/ -maxdepth 4 -iname "*.cpp" -o -iname "*.h"
+find . -exec ls -ld {} \; // find and execute
+find ~/ -iname *.cpp | xargs ls -ls {} \; // find and execute
+grep -ri "volodymyr" ~/Documents/* // find all matches in files
+grep -E '(vmx|svm)' --color /proc/cpuinfo // 
+grep -l int *.c // list of files names
+grep -n --color "int" *.c 
+grep -f ./user.txt /etc/passwd // grep all matches from file in file in path
+lsof //list open files
+netstat -nap
+dmidecode // needs to run as SU
+dmidecode -t bios// needs to run as SU
+tcpdump -i wlan0 // it will monitor wlan0
+crontab -e // add some boot script example @reboot /path to scipt/

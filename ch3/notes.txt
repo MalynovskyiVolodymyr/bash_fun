@@ -1,0 +1,4 @@
+
+-lt // less then
+-le // less or equall to
+-eq // equal to
